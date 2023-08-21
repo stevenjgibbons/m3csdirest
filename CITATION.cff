@@ -6,6 +6,6 @@ authors:
   orcid: "https://orcid.org/0000-0002-7822-0244"
 title: "m3csdirest"
 version: v1.0.0
-doi: No DOI yet
+doi: https://doi.org/10.5281/zenodo.8270726
 date-released: 2023-08-21
 url: "https://github.com/stevenjgibbons/m3csdirest"
