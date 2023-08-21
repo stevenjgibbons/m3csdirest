@@ -16,3 +16,10 @@ in the directory created once you have edited the makefile.
 
 This program writes out ASCII output and is not intended for operational use in any routine system.
 It is designed as a proof of concept program.  
+
+# Example  
+
+(1) Go into the directory KEV_NZ20101011 and run the python script  get_KEV.py  
+    This should generate 3 SAC-files: IU_KEV_BHE_10.sac  IU_KEV_BHN_10.sac  IU_KEV_BHZ_10.sac  
+
+(2) Assuming that you have managed to compile the program m3csdirest and have placed it in your path, run the script run_KEV_example.sh
