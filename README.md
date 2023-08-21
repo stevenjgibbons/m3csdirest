@@ -1,7 +1,7 @@
 # m3csdirest  
 Multiple 3-Component Station DIRection ESTimation (m3csdirest) 
 
-Release v1.0.1 is permanently stored on Zenodo with DOI 10.5281/zenodo.8270726  
+Release v1.0.0 is permanently stored on Zenodo with DOI 10.5281/zenodo.8270726  
 
 https://doi.org/10.5281/zenodo.8270726  
 
