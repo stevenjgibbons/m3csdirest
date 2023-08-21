@@ -1,5 +1,11 @@
 # m3csdirest  
-Multiple 3-Component Station DIRection ESTimation (m3csdirest)  
+Multiple 3-Component Station DIRection ESTimation (m3csdirest) 
+
+Release v1.0.1 is permanently stored on Zenodo with DOI 10.5281/zenodo.8270726  
+
+https://doi.org/10.5281/zenodo.8270726  
+
+[![DOI](https://zenodo.org/badge/681303774.svg)](https://zenodo.org/badge/latestdoi/681303774)  
 
 m3csdirest is a FORTRAN77 program that tries to estimate the direction of incoming P-waves on 3-component stations.
 It reads in SAC-format files and so you need to have SAC available in order to compile it in its current form.
