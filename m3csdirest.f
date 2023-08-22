@@ -530,8 +530,8 @@ C
         RAZI = RAZI + RDAZIM
       ENDDO
       ENDIF
- 81   FORMAT(A7,1X,I4,1X,f6.2,1X,f6.2,1X,f7.4)
- 82   FORMAT(A3,I4.4,1X,I4,1X,f6.2,1X,f6.2,1X,f7.4)
+ 81   FORMAT(A7,1X,I4,1X,f6.2,1X,f7.2,1X,f7.4)
+ 82   FORMAT(A3,I4.4,1X,I4,1X,f6.2,1X,f7.2,1X,f7.4)
 C
 C This is the option where we just want to write out the 
 C optimal azimuth for box with optimal coherence
