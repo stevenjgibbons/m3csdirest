@@ -258,7 +258,7 @@ C       .
 C       .
 C       . Extract station name
 C       .
-        IARG   = 1
+        IARG   = 2
         I1     = IARGL( IARG, 1 )
         I2     = IARGL( IARG, 2 )
         ILEN   = I2 - I1 + 1
@@ -576,11 +576,12 @@ C
             IF ( CENAZ2.GT.180.0 ) CENAZ2 = CENAZ2 - 360.0
             WRITE (6,73) ISTAT, IBOX, REAL(IBOX-1)*DTBOX,
      1             OPACVL( IBOX, ISTAT ), CENAZ1, OPVCVL( IBOX, ISTAT ),
-     2             OPAIDM( IBOX, ISTAT ), CENAZ2, OPVIDM( IBOX, ISTAT )
+     2             OPAIDM( IBOX, ISTAT ), CENAZ2, OPVIDM( IBOX, ISTAT ),
+     3             CSTATN( ISTAT )
           ENDDO
         ENDDO
  73   FORMAT('OAZStat ',I4,1X,I4,' t ',f9.3,1X,f7.3,1X,f8.3,1X,
-     1                          f5.3,1X,f7.3,1X,f8.3,1X,f5.3)
+     1                  f5.3,1X,f7.3,1X,f8.3,1X,f5.3,1X,A5)
       ENDIF
 C
       RETURN
