@@ -7,6 +7,11 @@ https://doi.org/10.5281/zenodo.8270726
 
 [![DOI](https://zenodo.org/badge/681303774.svg)](https://zenodo.org/badge/latestdoi/681303774)  
 
+[![SQAaaS badge](https://github.com/EOSC-synergy/SQAaaS/raw/master/badges/badges_150x116/badge_software_bronze.png)](https://api.eu.badgr.io/public/assertions/DmOJYacOTASd09xnXedYwQ "SQAaaS bronze badge achieved")
+
+[![SQAaaS badge shields.io](https://img.shields.io/badge/sqaaas%20software-bronze-e6ae77)](https://api.eu.badgr.io/public/assertions/DmOJYacOTASd09xnXedYwQ "SQAaaS bronze badge achieved")
+
+
 m3csdirest is a FORTRAN77 program that tries to estimate the direction of incoming P-waves on 3-component stations.
 It reads in SAC-format files and so you need to have SAC available in order to compile it in its current form.
 If you are not able to obtain SAC for whatever reason, you will need to replace the lines which call
