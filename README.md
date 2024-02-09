@@ -21,7 +21,9 @@ optimal backazimuth.
 
 The program should compile by typing   
 
-make m3csdirest  
+```
+make m3csdirest
+```  
 
 in the directory created once you have edited the makefile.  
 
@@ -34,6 +36,28 @@ It is designed as a proof of concept program.
     This should generate 3 SAC-files: IU_KEV_BHE_10.sac  IU_KEV_BHN_10.sac  IU_KEV_BHZ_10.sac  
 
 (2) Assuming that you have managed to compile the program m3csdirest and have placed it in your path, run the script run_KEV_example.sh
+
+```
+#!/bin/sh
+# Note that the KEV data collected have 40 Hz sampling
+# so 4 seconds is 160 samples.
+# This script should calculate the output for the files
+# generated in the directory KEV_NZ20101011
+#
+inputfile=KEV_m3csdirest.input
+cat << EOF > ${inputfile}
+KEV_NZ20101011/IU_KEV_BHZ_10.sac   KEV
+KEV_NZ20101011/IU_KEV_BHE_10.sac   90.0
+KEV_NZ20101011/IU_KEV_BHN_10.sac    0.0
+EOF
+NSTAT=1
+NCCLEN=160
+NSKIP=40
+NAZIB2=36
+ICFLAG=1
+OUTFLAG=1111
+m3csdirest $NSTAT $NCCLEN $NSKIP $NAZIB2 $ICFLAG $OUTFLAG < $inputfile > KEV.out
+```
 
 Relevant paper  
 ==============
