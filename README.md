@@ -58,6 +58,17 @@ ICFLAG=1
 OUTFLAG=1111
 m3csdirest $NSTAT $NCCLEN $NSKIP $NAZIB2 $ICFLAG $OUTFLAG < $inputfile > KEV.out
 ```
+# Auxiliary program - aziwsa  
+
+This program just tries to make a weighted average of azimuith values.  
+An example is done by running  
+
+```
+sh run_aziwsa.sh
+python plot_aziwsa_out.py
+```
+
+
 
 Relevant paper  
 ==============
