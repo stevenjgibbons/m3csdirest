@@ -100,7 +100,7 @@ C
 C
 C Now zero the weighted stack ...
 C
-      DO IAZ = 1, NAZIB2
+      DO IAZ = 1, NAZIB2*2
         DWGSTK(  IAZ  ) = 0.0d0
       ENDDO
 C
